@@ -13,3 +13,6 @@
 [submodule "harpia/third_party/glm"]
 	path = harpia/third_party/glm
 	url = https://github.com/g-truc/glm
+[submodule "harpia/third_party/imgui/imgui"]
+	path = harpia/third_party/imgui/imgui
+	url = https://github.com/ocornut/imgui
