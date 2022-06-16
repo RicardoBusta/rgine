@@ -18,5 +18,6 @@ target_link_libraries(
         Harpia.Rendering
         Harpia.Application.Internal
         Harpia.Game.Internal
+        Harpia.Ui
 )
 add_subdirectory(Internal)

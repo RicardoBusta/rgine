@@ -39,10 +39,10 @@ include_directories(${PROJECT_NAME} PUBLIC ${${PROJECT_NAME}_INCLUDES})
 
 if(BUILD_SHARED_LIBS)
     message("== Building Harpia Shared")
-    add_library(${PROJECT_NAME} SHARED ${Harpia_SRC})
+    add_library(${PROJECT_NAME} SHARED ${${PROJECT_NAME}_SRC})
 else()
     message("== Building Harpia Static")
-    add_library(${PROJECT_NAME} STATIC ${Harpia_SRC})
+    add_library(${PROJECT_NAME} STATIC ${${PROJECT_NAME}_SRC})
 endif()
 
 # TODO In order to generate webgl builds, need to also create a static lib with static dependencies
