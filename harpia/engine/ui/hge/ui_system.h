@@ -7,6 +7,7 @@
 
 #include "hge/i_application_system.h"
 #include "hge/internal_defines.h"
+#include "imgui/imgui.h"
 
 namespace Harpia::Internal {
     class UISystem : public Internal::IApplicationSystem {

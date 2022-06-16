@@ -3,10 +3,11 @@
   <component name="CMakeWorkspace" PROJECT_DIR="$PROJECT_DIR$" />
   <component name="CidrRootsConfiguration">
     <sourceRoots>
-      <file path="$PROJECT_DIR$/Harpia/Engine" />
+      <file path="$PROJECT_DIR$/harpia/engine" />
     </sourceRoots>
     <libraryRoots>
-      <file path="$PROJECT_DIR$/Harpia/ThirdParty" />
+      <file path="$PROJECT_DIR$/harpia/ThirdParty" />
+      <file path="$PROJECT_DIR$/harpia/third_party" />
     </libraryRoots>
   </component>
 </project>
