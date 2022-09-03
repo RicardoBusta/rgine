@@ -54,3 +54,6 @@ https://lazyfoo.net/tutorials/SDL/index.php
 ## Math libs
 - https://github.com/sgorsten/linalg/blob/main/linalg.h
 - https://github.com/g-truc/glm
+
+##
+- CMake https://cristianadam.eu/20191222/using-github-actions-with-c-plus-plus-and-cmake/

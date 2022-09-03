@@ -24,9 +24,14 @@ else ()
 endif ()
 
 set(SDL2MIXER_VENDORED ON)
+option(SDL2MIXER_VENDORED "" ON)
 set(SDL2MIXER_FLAC OFF)
+option(SDL2MIXER_FLAC "" OFF)
 set(SDL2MIXER_OPUS OFF)
+option(SDL2MIXER_OPUS "" OFF)
 set(SDL2MIXER_OGG ON)
+option(SDL2MIXER_OGG "" ON)
+
 
 list(
         APPEND
@@ -54,8 +59,8 @@ add_subdirectory(third_party)
 
 # With Mingw64 compiler, these DLL are required to run the app on Windows
 IF (WIN32)
-    get_filename_component(COMPILER_PATH ${CMAKE_CXX_COMPILER} DIRECTORY)
-    file(COPY ${COMPILER_PATH}/libwinpthread-1.dll DESTINATION ${CMAKE_BINARY_DIR}/bin/)
-    file(COPY ${COMPILER_PATH}/libstdc++-6.dll DESTINATION ${CMAKE_BINARY_DIR}/bin/)
-    file(COPY ${COMPILER_PATH}/libgcc_s_seh-1.dll DESTINATION ${CMAKE_BINARY_DIR}/bin/)
+    #    get_filename_component(COMPILER_PATH ${CMAKE_CXX_COMPILER} DIRECTORY)
+    #    file(COPY ${COMPILER_PATH}/libwinpthread-1.dll DESTINATION ${CMAKE_BINARY_DIR}/bin/)
+    #    file(COPY ${COMPILER_PATH}/libstdc++-6.dll DESTINATION ${CMAKE_BINARY_DIR}/bin/)
+    #    file(COPY ${COMPILER_PATH}/libgcc_s_seh-1.dll DESTINATION ${CMAKE_BINARY_DIR}/bin/)
 endif (WIN32)

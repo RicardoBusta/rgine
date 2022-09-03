@@ -9,5 +9,8 @@
       <file path="$PROJECT_DIR$/harpia/ThirdParty" />
       <file path="$PROJECT_DIR$/harpia/third_party" />
     </libraryRoots>
+    <excludeRoots>
+      <file path="$PROJECT_DIR$/.github" />
+    </excludeRoots>
   </component>
 </project>
