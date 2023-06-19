@@ -69,3 +69,7 @@ jobs:
               echo "=== cat /home/runner/work/harpia-game-engine/harpia-game-engine/build/CMakeFiles/CMakeError.log"
               cat /home/runner/work/harpia-game-engine/harpia-game-engine/build/CMakeFiles/CMakeError.log
           fi
+      - uses: actions/upload-artifact@v3
+        with:
+          name: build
+          path: ./build/
